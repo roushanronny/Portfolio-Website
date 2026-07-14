@@ -1,11 +1,49 @@
+/*==================== AUTO EXPERIENCE YEARS ====================*/
+const CAREER_START_DATE = new Date(2025, 5, 3); // 3 June 2025
+
+function getExperienceYearsPlus() {
+  const now = new Date();
+  let months =
+    (now.getFullYear() - CAREER_START_DATE.getFullYear()) * 12 +
+    (now.getMonth() - CAREER_START_DATE.getMonth());
+
+  if (now.getDate() < CAREER_START_DATE.getDate()) {
+    months -= 1;
+  }
+
+  if (months < 0) {
+    months = 0;
+  }
+
+  const fullYears = Math.floor(months / 12);
+  const displayYears = fullYears === 0 && months > 0 ? 1 : fullYears;
+
+  return `${displayYears}+`;
+}
+
+function updateExperienceYears() {
+  const yearsPlus = getExperienceYearsPlus();
+  const yearsCard = document.getElementById('experience-years');
+  const yearsText = document.getElementById('experience-years-text');
+
+  if (yearsCard) {
+    yearsCard.textContent = yearsPlus;
+  }
+
+  if (yearsText) {
+    yearsText.textContent = `${yearsPlus} years of experience`;
+  }
+}
+
+updateExperienceYears();
+
 /*==================== TYPING ANIMATION ====================*/
 const typingTextElement = document.querySelector('.typing-text');
 if (typingTextElement) {
   const texts = [
-    'Software Developer',
+    'Software Engineer',
     'Full-Stack Engineer',
-    'ML Enthusiast',
-    'Problem Solver'
+    'Cloud and DevOps Engineer'
   ];
   let textIndex = 0;
   let charIndex = 0;
@@ -124,23 +162,25 @@ const modalViews = document.querySelectorAll(".services__modal"),
   modalBtns = document.querySelectorAll(".services__button"),
   modalCloses = document.querySelectorAll(".services__modal-close");
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
+if (modalBtns.length) {
+  let modal = function (modalClick) {
+    modalViews[modalClick].classList.add("active-modal");
+  };
 
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener("click", () => {
-    modal(i);
-  });
-});
-
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove("active-modal");
+  modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener("click", () => {
+      modal(i);
     });
   });
-});
+
+  modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener("click", () => {
+      modalViews.forEach((modalView) => {
+        modalView.classList.remove("active-modal");
+      });
+    });
+  });
+}
 
 /*======================= Portfolio Swiper ===================*/
 var swiper = new Swiper(".portfolio__container", {
@@ -337,4 +377,24 @@ function showFormMessage(text, type) {
   
   // Scroll to message
   formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+/*==================== SCROLL REVEAL ====================*/
+const revealElements = document.querySelectorAll('.reveal');
+if (revealElements.length && 'IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  revealElements.forEach((el) => revealObserver.observe(el));
+} else {
+  revealElements.forEach((el) => el.classList.add('reveal-visible'));
 }

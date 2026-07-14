@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Roushan Kumar | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/newcss.css" />
+    <link rel="stylesheet" href="assets/newcss.css?v=footer1" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
@@ -35,6 +41,11 @@
               </a>
             </li>
             <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="uil uil-award nav__icon"></i>Certifications
+              </a>
+            </li>
+            <li class="nav__item">
               <a href="#qualification" class="nav__link">
                 <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
               </a>
@@ -46,7 +57,7 @@
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contact-Me
+                <i class="uil uil-message nav__icon"></i>Contact
               </a>
             </li>
           </ul>
@@ -104,12 +115,11 @@
                 <span class="cursor">|</span>
               </h2>
               <p class="home__description">
-                Software Developer @ <strong>ACG Inspection</strong> | 
-                Computer Science & Engineering Graduate from 
-                <strong>NIT Tiruchirappalli</strong>
+                Software Engineer @ <strong>ACG World</strong><br />
+                B.Tech CSE from <strong>NIT Trichy</strong>
               </p>
               <p class="home__tagline">
-                Building scalable solutions • Full-stack developer • Machine Learning enthusiast
+                Full-Stack Engineer building scalable pharma track &amp; trace systems
               </p>
               <div class="home__cta">
                 <a href="#contact" class="button button--flex button--primary">
@@ -134,7 +144,7 @@
 
       <!--======================= About========================-->
 
-      <section class="about section" id="about">
+      <section class="about section reveal" id="about">
         <div class="section__header">
           <span class="section__number">01.</span>
           <h2 class="section__title">About Me</h2>
@@ -143,45 +153,48 @@
         <span class="section__subtitle">Get to know me better</span>
 
         <div class="about__container container grid">
-          <img src="assets\img\about.jpg" alt="" class="about__img" />
+          <div class="about__img-wrapper">
+            <img src="assets/img/about.jpg" alt="Roushan Kumar" class="about__img" />
+          </div>
 
           <div class="about__data">
             <div class="about__content">
               <p class="about__description">
-                I'm a <strong>Software Developer</strong> currently building innovative solutions at <strong>ACG Inspection, Hyderabad</strong>. A Computer Science & Engineering graduate from <strong>NIT Tiruchirappalli</strong>, I specialize in full-stack development, cloud technologies, and machine learning.
+                I'm a <strong>Software Engineer</strong> with <strong id="experience-years-text">1+ years of experience</strong> building scalable, enterprise-grade software for the pharmaceutical supply chain — specializing in serialization, track &amp; trace, regulatory compliance, and cloud-native architectures.
               </p>
               <p class="about__description">
-                Currently working on the <strong>ALSC L4 Cloud Project</strong>, where I've authored ~80% of all unit test cases and developed end-to-end modules including Audit Trail and Serial Number Generation. Previously, I worked as a <strong>Research Consultant at WorldQuant</strong>, developing quantitative trading strategies and achieving 30% improvement in predictive accuracy.
+                At <strong>ACG World</strong>, I contribute to the <strong>ACG Life Sciences Cloud (ALSC)</strong> platform, developing full-stack enterprise applications with <strong>React, Node.js, and .NET</strong> across frontend, backend, REST APIs, databases, Azure services, and cloud infrastructure. Key modules I've worked on include Serial Number Generation, EPCIS Processing, Integration &amp; Outbound Shipment, Tenant Onboarding, Audit Trail, and Compliance Gateway regulations.
               </p>
               <p class="about__description">
-                I'm passionate about building scalable applications using modern tech stacks, implementing real-time systems, and solving complex problems with data-driven solutions. I've worked with technologies like React, Node.js, Python, AWS, Azure, and have experience in machine learning and NLP.
+                I develop country-specific pharmaceutical compliance solutions — delivering features for <strong>TRVST</strong>, currently building <strong>EPTTS (Egypt)</strong> end-to-end (regulation processing, business rules, reports, alerts, cloud storage, REST APIs), and contributing to upcoming <strong>Russian pharmaceutical compliance</strong>. B.Tech CSE from <strong>NIT Trichy</strong>.
               </p>
               <div class="about__tech-stack">
                 <p class="tech-stack__title">Technologies I work with:</p>
                 <div class="tech-stack__tags">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">C++</span>
-                  <span class="tech-tag">Java</span>
-                  <span class="tech-tag">JavaScript</span>
                   <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">JavaScript</span>
                   <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">Redux</span>
                   <span class="tech-tag">.NET</span>
-                  <span class="tech-tag">MongoDB</span>
-                  <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">AWS</span>
-                  <span class="tech-tag">Azure</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">Azure Functions</span>
+                  <span class="tech-tag">Azure APIM</span>
+                  <span class="tech-tag">Blob Storage</span>
+                  <span class="tech-tag">SQL Server</span>
+                  <span class="tech-tag">Dapper</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">EPCIS / GS1</span>
                   <span class="tech-tag">Git</span>
+                  <span class="tech-tag">Azure DevOps</span>
                   <span class="tech-tag">CI/CD</span>
-                  <span class="tech-tag">Machine Learning</span>
                 </div>
               </div>
             </div>
 
             <div class="about__info">
               <div>
-                <span class="about__info-title">7</span>
-                <span class="about__info-name">Months <br />Experience</span>
+                <span class="about__info-title" id="experience-years">1+</span>
+                <span class="about__info-name">Years <br />Experience</span>
               </div>
 
               <div>
@@ -199,7 +212,7 @@
             </div>
 
             <div class="about__buttons">
-              <a download="" href="assets\MyCV.pdf" class="button button--flex">
+              <a download="RoushanKumar.pdf" href="assets/RoushanKumar.pdf" class="button button--flex">
                 Download CV<i class="fas fa-download button__icon"></i>
               </a>
             </div>
@@ -209,7 +222,7 @@
 
       <!--===================== SKILLS =====================-->
 
-      <section class="skills section" id="skills">
+      <section class="skills section reveal" id="skills">
         <div class="section__header">
           <span class="section__number">02.</span>
           <h2 class="section__title">Skills & Technologies</h2>
@@ -235,6 +248,26 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript / TypeScript</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node.js</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">.NET / C#</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
                     <h3 class="skills__name">Python</h3>
                   </div>
                 </div>
@@ -250,27 +283,7 @@
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">JavaScript</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">React</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Redux</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Node.js</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">.NET</h3>
+                    <h3 class="skills__name">REST APIs</h3>
                   </div>
                 </div>
               </div>
@@ -282,7 +295,7 @@
                 <i class="fas fa-code skills__icon"></i>
 
                 <div>
-                  <h1 class="skills__title">Core Concepts & Tools</h1>
+                  <h1 class="skills__title">Core Concepts & Domain</h1>
                 </div>
 
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -291,32 +304,7 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Data Structures</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Algorithms</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">OOP</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">DBMS</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Operating System</h3>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Computer Networks</h3>
+                    <h3 class="skills__name">Microservices</h3>
                   </div>
                 </div>
                 <div class="skills__data">
@@ -326,12 +314,32 @@
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Linux</h3>
+                    <h3 class="skills__name">EPCIS / GS1 Standards</h3>
                   </div>
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Machine Learning</h3>
+                    <h3 class="skills__name">Pharmaceutical Serialization</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Track & Trace Compliance</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Data Structures & Algorithms</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Unit Testing / Code Quality</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">ESLint & Prettier</h3>
                   </div>
                 </div>
               </div>
@@ -353,27 +361,27 @@
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">MongoDB</h3>
+                    <h3 class="skills__name">SQL Server & Dapper</h3>
                   </div>
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">MySQL</h3>
+                    <h3 class="skills__name">Azure Functions</h3>
                   </div>
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Microsoft Azure</h3>
+                    <h3 class="skills__name">Azure API Management</h3>
                   </div>
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">AWS</h3>
+                    <h3 class="skills__name">Azure Blob Storage</h3>
                   </div>
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Git</h3>
+                    <h3 class="skills__name">Git & Azure DevOps</h3>
                   </div>
                 </div>
                 <div class="skills__data">
@@ -390,95 +398,85 @@
 
       <!--===================== CERTIFICATE =====================-->
 
-      <section class="certificates section" id="certificates">
+      <section class="certificates section reveal" id="certificates">
         <div class="section__header">
-          <span class="section__number">05.</span>
+          <span class="section__number">03.</span>
           <h2 class="section__title">Certifications</h2>
           <div class="section__title-line"></div>
         </div>
         <span class="section__subtitle">Professional certifications & achievements</span>
 
-        <div class="certificates__container container grid">
-          <div>
-     
-            
-            <!--====================  certificate  =================-->
-      <div class="certificates__content certificates__open">
-        <div class="certificates__header">
-          <i class="fas fa-pencil-ruler certificates__icon"></i>
+        <div class="certificates__grid container">
+          <article class="certificate-card">
+            <div class="certificate-card__icon">
+              <i class="uil uil-award"></i>
+            </div>
+            <h3 class="certificate-card__title">Software Engineer Certificate</h3>
+            <p class="certificate-card__provider">HackerRank</p>
+            <a
+              href="https://www.hackerrank.com/certificates/89f04b695ce6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="certificate-card__link"
+            >
+              View Certificate <i class="uil uil-arrow-up-right"></i>
+            </a>
+          </article>
 
-          <div>
-            <h1 class="certificates__title">certification</h1>
-          </div>
+          <article class="certificate-card">
+            <div class="certificate-card__icon">
+              <i class="uil uil-graduation-cap"></i>
+            </div>
+            <h3 class="certificate-card__title">Software Development Certificate</h3>
+            <p class="certificate-card__provider">Microsoft &amp; LinkedIn Learning</p>
+            <a
+              href="https://www.linkedin.com/learning/certificates/5cd106da35699d19f9be12f733cf496a9ddbe4c9c1eecf788f4e951111afa032?trk=share_certificate"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="certificate-card__link"
+            >
+              View Certificate <i class="uil uil-arrow-up-right"></i>
+            </a>
+          </article>
 
-          <i class="uil uil-angle-down certificates__arrow"></i>
+          <article class="certificate-card">
+            <div class="certificate-card__icon">
+              <i class="uil uil-briefcase-alt"></i>
+            </div>
+            <h3 class="certificate-card__title">Software Engineering Virtual Experience</h3>
+            <p class="certificate-card__provider">Goldman Sachs (Forage)</p>
+            <a
+              href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/MBA4MnZTNFEoJZGnk/NPdeQ43o8P9HJmJzg_MBA4MnZTNFEoJZGnk_H35YoWAnN4Gjy8dqf_1741759754233_completion_certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="certificate-card__link"
+            >
+              View Certificate <i class="uil uil-arrow-up-right"></i>
+            </a>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-card__icon">
+              <i class="uil uil-cloud"></i>
+            </div>
+            <h3 class="certificate-card__title">Azure AI Engineer Associate</h3>
+            <p class="certificate-card__provider">Microsoft</p>
+            <a
+              href="https://learn.microsoft.com/en-us/users/roushankumar-1579/transcript/vnmx5br3x14nyq4"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="certificate-card__link"
+            >
+              View Transcript <i class="uil uil-arrow-up-right"></i>
+            </a>
+          </article>
         </div>
-        
-
-        <div class="certificates__list grid">
-          <div class="certificates__data">
-            <div class="certificates__titles">
-              <h3 class="certificates__name">Software Engineer Certificate</h3>
-              <p class="certificates__provider">HackerRank</p>
-              <a
-                  href="#"
-                  class="button button--flex button--small certificates__button"
-                >
-                  View Certificate
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-            </div>
-          </div>
-          
-          <div class="certificates__data">
-            <div class="certificates__titles">
-              <h3 class="certificates__name">Software Development Certificate</h3>
-              <p class="certificates__provider">Microsoft & LinkedIn Learning</p>
-              <a
-                  href="https://www.linkedin.com/learning/certificates/5cd106da35699d19f9be12f733cf496a9ddbe4c9c1eecf788f4e951111afa032?trk=share_certificate"
-                  class="button button--flex button--small certificates__button"
-                >
-                  View Certificate
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-            </div>
-          </div>
-          
-          <div class="certificates__data">
-            <div class="certificates__titles">
-              <h3 class="certificates__name">Software Engineering Virtual Experience</h3>
-              <p class="certificates__provider">Goldman Sachs (Forage)</p>
-              <a
-                  href="#"
-                  class="button button--flex button--small certificates__button"
-                >
-                  View Certificate
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-            </div>
-          </div>
-          
-          <div class="certificates__data">
-            <div class="certificates__titles">
-              <h3 class="certificates__name">Azure AI Engineer Associate</h3>
-              <p class="certificates__provider">Microsoft</p>
-              <a
-                  href="https://learn.microsoft.com/en-us/users/roushankumar-1579/transcript/vnmx5br3x14nyq4"
-                  class="button button--flex button--small certificates__button"
-                >
-                  View Transcript
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> 
+      </section> 
 
 
       <!--==================== Experience ==================-->
 
-      <section class="qualification__section service__section" id="qualification">
+      <section class="qualification__section service__section reveal" id="qualification">
         <div class="section__header">
           <span class="section__number">04.</span>
           <h2 class="section__title">Experience & Education</h2>
@@ -486,335 +484,157 @@
         </div>
         <span class="section__subtitle">My professional journey</span>
 
-        <div
-          class="qualification__container container grid services__container"
-        >
+        <div class="qualification__container container">
           <div class="qualification__tabs">
-            <div
-              class="qualification__button button--flex qualification__active"
+            <button
+              type="button"
+              class="qualification__button qualification__active"
               data-target="#experience"
             >
               <i class="uil uil-briefcase-alt qualification__icon"></i>
               Experience
-            </div>
-            <div
-              class="qualification__button button--flex"
+            </button>
+            <button
+              type="button"
+              class="qualification__button"
               data-target="#education"
             >
               <i class="uil uil-graduation-cap qualification__icon"></i>
               Education
-            </div>
+            </button>
           </div>
 
           <div class="qualification__sections">
-            <!--====== Experience Content ======-->
             <div
-              class="qualification__content qualifiation__active services__content"
+              class="qualification__content qualifiation__active"
               data-content
               id="experience"
             >
-              <!--====== Experience 1 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Software Developer</h3>
-                  <span class="qualification__subtitle"
-                    >ACG Inspection <br />Hyderabad, Telangana, India</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    Jun 2024 - Present (7 months)
-                  </div>
-                  <div class="qualification__details">
-                    <ul style="text-align: left; margin-top: 0.5rem; padding-left: 1rem;">
-                      <li>Frontend and backend development on ALSC L4 Cloud Project, authored ~80% of all unit test cases</li>
-                      <li>Designed, developed, and maintained Audit Trail module end-to-end; contributed to Serial Number Generation module</li>
-                      <li>Resolved critical bugs/issues across application layers (frontend, backend, database)</li>
-                      <li>Implemented ESLint and Prettier for coding standards and quality</li>
+              <div class="timeline">
+                <article class="timeline__card">
+                  <div class="timeline__marker"></div>
+                  <div class="timeline__body">
+                    <div class="timeline__meta">
+                      <span class="timeline__badge">Current</span>
+                      <span class="timeline__date">
+                        <i class="uil uil-calendar-alt"></i>
+                        Jun 2024 – Present
+                      </span>
+                    </div>
+                    <h3 class="timeline__title">Software Engineer</h3>
+                    <p class="timeline__company">ACG World · Hyderabad, India</p>
+                    <ul class="timeline__list">
+                      <li>Build full-stack apps on ALSC using React, Node.js, and .NET across APIs, SQL Server, and Azure</li>
+                      <li>Delivered modules: SNG, EPCIS, Integration &amp; Outbound Shipment, Tenant Onboarding, Audit Trail</li>
+                      <li>Shipped Compliance Gateway features for TRVST and EPTTS (Egypt) to production with no reported defects</li>
+                      <li>Contributing to Russian pharma compliance; Azure Functions, SQL procedures, and frontend workflows</li>
+                      <li>Improved code quality with unit tests, ESLint, and Prettier standards</li>
                     </ul>
                   </div>
-                </div>
+                </article>
 
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-
-              <!--====== Experience 2 ======-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-                <div>
-                  <h3 class="qualification__title">Research Consultant</h3>
-                  <span class="qualification__subtitle"
-                    >WorldQuant <br />Remote</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    Sep 2023 - May 2025
-                  </div>
-                  <div class="qualification__details">
-                    <ul style="text-align: left; margin-top: 0.5rem; padding-left: 1rem;">
-                      <li>Developed quantitative trading strategies using historical market data</li>
-                      <li>Achieved 30% improvement in predictive accuracy using statistical learning</li>
-                      <li>Built end-to-end pipelines for data preprocessing, feature engineering, and model evaluation</li>
+                <article class="timeline__card">
+                  <div class="timeline__marker"></div>
+                  <div class="timeline__body">
+                    <div class="timeline__meta">
+                      <span class="timeline__date">
+                        <i class="uil uil-calendar-alt"></i>
+                        Sep 2023 – May 2025
+                      </span>
+                    </div>
+                    <h3 class="timeline__title">Research Consultant</h3>
+                    <p class="timeline__company">WorldQuant · Remote</p>
+                    <ul class="timeline__list">
+                      <li>Formulated quantitative trading strategies through independent analysis of historical market data, price signals, and macro trends.</li>
+                      <li>Elevated predictive accuracy by 30% by detecting regime shifts and applying advanced statistical learning techniques to alpha signals.</li>
+                      <li>Engineered end-to-end pipelines covering data preprocessing, feature engineering, and model evaluation to validate and deploy trading models.</li>
                     </ul>
                   </div>
-                </div>
-              </div>
+                </article>
 
-              <!--====== Experience 3 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Software Developer Intern</h3>
-                  <span class="qualification__subtitle"
-                    >Exposys Data Labs <br />Bengaluru, Karnataka, India</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    May 2024 - Jul 2024
-                  </div>
-                  <div class="qualification__details">
-                    <ul style="text-align: left; margin-top: 0.5rem; padding-left: 1rem;">
-                      <li>Built Credit Card Fraud Detection model using Python and logistic regression</li>
-                      <li>Pre-processed data, handled missing values, split datasets</li>
-                      <li>Conducted anomaly detection analysis for model enhancement</li>
+                <article class="timeline__card">
+                  <div class="timeline__marker"></div>
+                  <div class="timeline__body">
+                    <div class="timeline__meta">
+                      <span class="timeline__date">
+                        <i class="uil uil-calendar-alt"></i>
+                        May 2024 – Jul 2024
+                      </span>
+                    </div>
+                    <h3 class="timeline__title">Software Developer Intern</h3>
+                    <p class="timeline__company">Exposys Data Labs · Bengaluru, India</p>
+                    <ul class="timeline__list">
+                      <li>Architected a real-time chat application using Socket.io achieving sub-50ms latency and supporting 500+ concurrent users.</li>
+                      <li>Secured the platform with JWT-based authentication and authorization, cutting unauthorized login attempts by 90%.</li>
+                      <li>Refactored React components and state management logic, slashing page load time by 2.3 seconds and improving responsiveness by 30%.</li>
                     </ul>
                   </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <!--<span class="qualification__line"></span>-->
-                </div>
+                </article>
               </div>
             </div>
 
-            <!--====== Education Content ======-->
             <div
-              class="qualification__content services__content"
+              class="qualification__content"
               data-content
               id="education"
             >
-              <!--====== Qualification 1 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">10th</h3>
-                  <span class="qualification__subtitle"
-                    >Gyan Bharti model school  <br />(NAWADA)</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2018
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        Class 10th Summary :
-                      </h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Subjects studied: Foundation of IT, Science, Maths, English,
-                            Social Studies,Hindi.
-                          </p>
-                        </li>
-                        
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>Came 1st position in Foundation of IT championship program.</p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>1st rank in science exhibition project.</p>
-                        </li>
-                      </ul>
+              <div class="timeline">
+                <article class="timeline__card">
+                  <div class="timeline__marker"></div>
+                  <div class="timeline__body">
+                    <div class="timeline__meta">
+                      <span class="timeline__badge">Graduation</span>
+                      <span class="timeline__date">
+                        <i class="uil uil-calendar-alt"></i>
+                        Nov 2021 – May 2025
+                      </span>
                     </div>
+                    <h3 class="timeline__title">B.Tech in Computer Science &amp; Engineering</h3>
+                    <p class="timeline__company">NIT Trichy (NIT Tiruchirappalli)</p>
+                    <ul class="timeline__list">
+                      <li>Core CS: DSA, DBMS, CN, OS, System Design, Algorithms</li>
+                      <li>5★ C++ on HackerRank; certifications in DSA, Full-Stack, Google Analytics, Microsoft AI</li>
+                      <li>Student coordinator — Media &amp; Publication Club; NSS volunteer</li>
+                      <li>1st place — Beardo fashion show, Pragyan’23</li>
+                    </ul>
                   </div>
-                </div>
+                </article>
 
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-
-              <!--====== Qualification 2 ======-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-                <div>
-                  <h3 class="qualification__title">Class 12th</h3>
-                  <span class="qualification__subtitle"
-                    >T.S College  <br />(NAWADA)</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2020
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        Class 12th Summary :
-                      </h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Subjects studied: Physics, Chemistry, Maths,
-                            English, Hindi.
-                          </p>
-                        </li>
-                        
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>In class 12th Board result I got Distinction (D) in 4 subjects out of 5 subjects.</p>
-                        </li>
-                      </ul>
+                <article class="timeline__card">
+                  <div class="timeline__marker"></div>
+                  <div class="timeline__body">
+                    <div class="timeline__meta">
+                      <span class="timeline__date">
+                        <i class="uil uil-calendar-alt"></i>
+                        2020
+                      </span>
                     </div>
+                    <h3 class="timeline__title">Class 12th</h3>
+                    <p class="timeline__company">T.S College, Nawada</p>
+                    <ul class="timeline__list">
+                      <li>Subjects: Physics, Maths, Hindi, Chemistry</li>
+                      <li>Distinction (D) in 4 out of 5 board subjects</li>
+                    </ul>
                   </div>
-                </div>
-              </div>
+                </article>
 
-              <!--====== Qualification 3 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">B.Tech in Computer Science & Engineering</h3>
-                  <span class="qualification__subtitle"
-                    >National Institute of Technology, Tiruchirappalli</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    Nov 2021 - May 2025
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">College Summary :</h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Studying core subjects of IT including DSA ,CN ,DBMS
-                            Embedded systems, Design analysis and algorithm, Operating
-                            systems, Computer architecture ,Systum Design .
-                          </p>
-                        </li>
-                        
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            In HackerRank I achieve 5 Stars in C++ programming language.
-                            
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Earned a certification in C++, DSA , Full stack web development
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Earned a certification google from in Google Analytics
-                            
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Earned a certification from Microsoft in AI
-                            
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Student coordinator in media and
-                            publication club in NIT TRICHY.
-                            
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Secured First place in Beardo fashion show in Pragyan’23 an international techno-management festival of NIT TRICHY.
-                            
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            NSS, NIT TRICHY
-                            Worked in NSS, it is a two-year voluntary service where students are allowed to develop their personality through social service.NSS volunteers have helped in the plantation project in college. Blood donation camps, computer coaching for school children, cleaning up temples.
-                            
-                          </p>
-                        </li>
-                      </ul>
+                <article class="timeline__card">
+                  <div class="timeline__marker"></div>
+                  <div class="timeline__body">
+                    <div class="timeline__meta">
+                      <span class="timeline__date">
+                        <i class="uil uil-calendar-alt"></i>
+                        2018
+                      </span>
                     </div>
+                    <h3 class="timeline__title">Class 10th</h3>
+                    <p class="timeline__company">Gyan Bharti Model School, Nawada</p>
+                    <ul class="timeline__list">
+                      <li>Subjects: Foundation of IT, Science, Maths, English, Social Studies, Hindi</li>
+                      <li>1st in Foundation of IT championship; 1st in science exhibition</li>
+                    </ul>
                   </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <!--<span class="qualification__line"></span>-->
-                </div>
+                </article>
               </div>
             </div>
           </div>
@@ -822,9 +642,9 @@
       </section>
 
       <!--=================== Portfolio ===================-->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section reveal" id="portfolio">
         <div class="section__header">
-          <span class="section__number">03.</span>
+          <span class="section__number">05.</span>
           <h2 class="section__title">Featured Projects</h2>
           <div class="section__title-line"></div>
         </div>
@@ -1015,7 +835,7 @@
       </section>
 
       <!--===================== Contact Me =====================-->
-      <section class="contact section" id="contact">
+      <section class="contact section reveal" id="contact">
         <div class="section__header">
           <span class="section__number">06.</span>
           <h2 class="section__title">Get In Touch</h2>
@@ -1115,44 +935,55 @@
     <!--================== Footer ===============-->
     <footer class="footer">
       <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Roushan</h1>
-            <span class="footer__subtitle"
-              >Computer Science And Engineering</span
-            >
+        <div class="footer__container container">
+          <div class="footer__brand">
+            <h2 class="footer__title">Roushan Kumar</h2>
+            <p class="footer__subtitle">Software Engineer</p>
+            <p class="footer__tagline">Building scalable enterprise software for global pharma supply chains.</p>
           </div>
 
-          <ul class="footer__links">
-            <li>
-              <a href="#qualification" class="footer__link">Qualification</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact-Me</a>
-            </li>
-          </ul>
-          <div class="footer__socials">
-            <a
-              href="https://www.instagram.com/roushanyadavv/"
-              class="footer__social"
-              target="__blank"
-            >
-            <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/roushan-kumar-7a4172257/"
-              class="footer__social"
-              target="__blank"
-            >
-            <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <div class="footer__nav">
+            <h3 class="footer__heading">Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="#home" class="footer__link">Home</a></li>
+              <li><a href="#about" class="footer__link">About</a></li>
+              <li><a href="#skills" class="footer__link">Skills</a></li>
+              <li><a href="#certificates" class="footer__link">Certifications</a></li>
+              <li><a href="#qualification" class="footer__link">Experience</a></li>
+              <li><a href="#portfolio" class="footer__link">Projects</a></li>
+              <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__connect">
+            <h3 class="footer__heading">Connect</h3>
+            <a href="mailto:roushankumarydv2003@gmail.com" class="footer__email">roushankumarydv2003@gmail.com</a>
+            <div class="footer__socials">
+              <a
+                href="https://www.linkedin.com/in/roushan-kumar-7a4172257/"
+                class="footer__social"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/roushanronny"
+                class="footer__social"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
 
-        <p class="footer__copy">&#169; Roushan Kumar. All right reserved</p>
+        <div class="footer__bottom container">
+          <p class="footer__copy">&copy; 2026 Roushan Kumar. All rights reserved.</p>
+        </div>
       </div>
     </footer>
      <!--================== SCROLL TOP ==================-->
